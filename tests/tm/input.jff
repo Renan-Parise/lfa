@@ -1,0 +1,41 @@
+<structure>
+    <type>turing</type>
+    <automaton>
+        <state id="q0" name="q0">
+            <initial/>
+        </state>
+        <state id="q1" name="q1">
+        </state>
+        <state id="q2" name="q2">
+            <final/>
+        </state>
+        <transition>
+            <from>q0</from>
+            <to>q1</to>
+            <read>1</read>
+            <write>X</write>
+            <move>R</move>
+        </transition>
+        <transition>
+            <from>q1</from>
+            <to>q1</to>
+            <read>1</read>
+            <write>1</write>
+            <move>R</move>
+        </transition>
+        <transition>
+            <from>q1</from>
+            <to>q2</to>
+            <read>+</read>
+            <write>+</write>
+            <move>R</move>
+        </transition>
+        <transition>
+            <from>q2</from>
+            <to>q2</to>
+            <read>1</read>
+            <write>1</write>
+            <move>R</move>
+        </transition>
+    </automaton>
+</structure>
