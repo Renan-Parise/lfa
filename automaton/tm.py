@@ -1,7 +1,5 @@
 from .base import Automaton
 
-from .base import Automaton
-
 class TuringMachine(Automaton):
     def __init__(self, states, transitions, start_state, accept_states):
         super().__init__(states, transitions, start_state, accept_states)
